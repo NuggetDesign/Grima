@@ -268,7 +268,7 @@ nav li:hover {
 }
 
 .services .title {
-  margin: 1em .5em 2em;
+  margin: 1em .5em -1em;
   font-size: 30px;
 }
 
@@ -349,7 +349,7 @@ nav li:hover {
 }
 
 .projects .container {
-  padding: 2em 1em;
+  margin: 2em 1em;
 }
 
 .projects .container img {
@@ -488,6 +488,9 @@ nav li:hover {
 
 .footer {
   background-color: #000909;
+}
+
+.footer .container {
   color: white;
   padding: 3em 2em;
   height: 600px;
@@ -542,16 +545,19 @@ nav li:hover {
 }
 
 @media only screen and (min-width: 425px) {
-  .hero-section .container, .services .container, .projects .container {
+  .hero-section .container, .services .container {
     padding: 2em 2em;
+  }
+  .projects .container {
+    padding: 2em 1em;
   }
   nav li a {
     font-size: 70px;
   }
   .services .title {
-    margin: 3em 1em 1em;
+    margin: 3em 1em -1em;
   }
-  .footer {
+  .footer .container {
     padding: 3em 2em;
   }
   .wrapper {
@@ -614,9 +620,9 @@ nav li:hover {
     width: 500px;
   }
   .projects .container {
-    padding: 2em 3em;
+    margin: 2em 3em;
   }
-  .footer {
+  .footer .container {
     padding: 4em 2em;
     height: 620px;
   }
@@ -703,7 +709,7 @@ nav li:hover {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
     gap: 1em;
-    padding: 2em 1.5em;
+    margin: 2em 1em;
   }
   .projects .container .title-card {
     font-size: 25px;
@@ -761,10 +767,10 @@ nav li:hover {
     width: 200px;
     padding: 20px;
   }
-  .footer {
+  .footer .container {
     height: 250px;
   }
-  .footer .top {
+  .footer .container .top {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -772,7 +778,7 @@ nav li:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .footer .top .logo {
+  .footer .container .top .logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -780,29 +786,29 @@ nav li:hover {
         -ms-flex-align: center;
             align-items: center;
   }
-  .footer .top .logo img {
+  .footer .container .top .logo img {
     width: 60px;
     height: 60px;
     margin-right: 1em;
   }
-  .footer .top .logo h1 {
+  .footer .container .top .logo h1 {
     margin: 0;
     font-size: 16px;
   }
-  .footer .top .logo p {
+  .footer .container .top .logo p {
     margin-top: 0;
   }
-  .footer .top .navigation {
+  .footer .container .top .navigation {
     margin-top: 0;
   }
-  .footer .top .navigation ul {
+  .footer .container .top .navigation ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 16px;
     gap: 1em;
   }
-  .footer .bottom {
+  .footer .container .bottom {
     margin-top: 5em;
   }
 }
@@ -814,13 +820,19 @@ nav li:hover {
 }
 
 @media only screen and (min-width: 1440px) {
+  .brand-logo, .nav-btn {
+    margin: 1em 3.5em;
+  }
+  .hero-section .container {
+    padding: 5em 14em 10em;
+  }
   .services .title {
-    margin: 4em 2em .5em;
+    margin: 4em 1.5em .5em;
   }
   .services .container {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 4.5em;
+    margin: 0 3em;
   }
   .services .container .configuration, .services .container .bug, .services .container .setup {
     height: 400px;
@@ -844,13 +856,16 @@ nav li:hover {
   .services .container .learn-btn {
     margin-top: 6em;
   }
+  .image .container {
+    margin-top: 10em;
+  }
   .projects .title {
-    margin: 4em 2em 1em;
+    margin: 4em 1.5em 1em;
   }
   .projects .container {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    margin: 0 4.5em;
+    margin: 0 4em;
   }
   .projects .container .card {
     height: 450px;
@@ -915,19 +930,49 @@ nav li:hover {
     margin-right: auto;
     width: 1000px;
   }
-  .footer {
+  .footer .container {
     padding: 4em 6em;
   }
-  .footer .top .logo img {
+  .footer .container .top .logo img {
     width: 100px;
     height: 100px;
   }
-  .footer .top .navigation ul {
+  .footer .container .top .navigation ul {
     gap: 2em;
     font-size: 20px;
   }
-  .footer .bottom {
+  .footer .container .bottom {
     margin-top: 4em;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .navigation .header-row {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  .nav-btn {
+    width: 540px;
+    margin: 1em auto;
+  }
+  .container, .services .container {
+    width: 1440px;
+    margin: 0 auto;
+  }
+  .services .title, .projects .title, .projects .container {
+    width: 1400px;
+    margin: 4em auto 1em;
+  }
+  .image .container {
+    width: 100%;
+    margin-top: 10em;
+  }
+}
+
+@media only screen and (min-width: 2560px) {
+  .nav-btn {
+    width: 1200px;
+    margin: 1em auto;
   }
 }
 /*# sourceMappingURL=main.css.map */

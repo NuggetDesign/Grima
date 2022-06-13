@@ -252,7 +252,7 @@ nav li:hover{
 
 .services {
     .title {
-        margin: 1em .5em 2em;
+        margin: 1em .5em -1em;
         font-size: 30px;
     }
 
@@ -325,7 +325,7 @@ nav li:hover{
     }
 
     .container {
-        padding: 2em 1em;
+        margin: 2em 1em;
 
         img {
             display: block;
@@ -464,10 +464,13 @@ nav li:hover{
 
 .footer {
     background-color: #000909;
-    color: white;
-    padding: 3em 2em;
-    height: 600px;
-    margin-top: 6em;
+
+    .container {
+        color: white;
+        padding: 3em 2em;
+        height: 600px;
+        margin-top: 6em;
+    }
     
     .top {
         .logo{
@@ -523,8 +526,12 @@ nav li:hover{
 
 @media only screen and (min-width: 425px) {
 
-    .hero-section .container, .services .container, .projects .container{
+    .hero-section .container, .services .container {
         padding: 2em 2em;
+    }
+
+    .projects .container {
+        padding: 2em 1em;
     }
 
     nav li a{
@@ -533,12 +540,14 @@ nav li:hover{
 
     .services {
         .title {
-            margin: 3em 1em 1em;
+            margin: 3em 1em -1em;
         }
     }
 
     .footer {
-        padding: 3em 2em;
+        .container {
+            padding: 3em 2em;
+        }
     }
 
     .wrapper {
@@ -626,13 +635,15 @@ nav li:hover{
 
     .projects {
         .container {
-            padding: 2em 3em;
+            margin: 2em 3em;
         }
     }
 
     .footer {
-        padding: 4em 2em;
-        height: 620px;
+        .container {
+            padding: 4em 2em;
+            height: 620px;
+        }
 
         .logo p {
             width: 230px;
@@ -740,7 +751,7 @@ nav li:hover{
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1em;
-            padding: 2em 1.5em;
+            margin: 2em 1em;
 
             .title-card {
                 font-size: 25px;
@@ -807,43 +818,46 @@ nav li:hover{
     }
 
     .footer {
-        height: 250px;;
-        .top {
-            display: flex;
-            justify-content: space-between;
+        .container {
+            height: 250px;
 
-            .logo {
+            .top {
                 display: flex;
-                align-items: center;
-
-                img {
-                    width: 60px;
-                    height: 60px;
-                    margin-right: 1em;
-                }
-
-                h1 {
-                    margin: 0;
-                    font-size: 16px;
-                }
-
-                p {
-                    margin-top: 0;
-                }
-            }
-
-            .navigation {
-                margin-top: 0;
-                    ul {
-                        display: flex;
-                        font-size: 16px;
-                        gap: 1em;
+                justify-content: space-between;
+    
+                .logo {
+                    display: flex;
+                    align-items: center;
+    
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        margin-right: 1em;
                     }
+    
+                    h1 {
+                        margin: 0;
+                        font-size: 16px;
+                    }
+    
+                    p {
+                        margin-top: 0;
+                    }
+                }
+    
+                .navigation {
+                    margin-top: 0;
+                        ul {
+                            display: flex;
+                            font-size: 16px;
+                            gap: 1em;
+                        }
+                }
             }
-        }
-
-        .bottom {
-            margin-top: 5em;
+    
+            .bottom {
+                margin-top: 5em;
+            }
         }
     }
 }
@@ -860,14 +874,24 @@ nav li:hover{
 
 @media only screen and (min-width: 1440px) {
 
+    .brand-logo, .nav-btn {
+        margin: 1em 3.5em;
+    }
+
+    .hero-section {
+        .container {
+            padding: 5em 14em 10em;
+        }
+    }
+
     .services {
         .title {
-            margin: 4em 2em .5em;
+            margin: 4em 1.5em .5em;
         }
 
         .container {
             grid-template-columns: 1fr 1fr 1fr;
-            margin: 0 4.5em;
+            margin: 0 3em;
             
             .configuration, .bug, .setup {
                 height: 400px;
@@ -899,14 +923,18 @@ nav li:hover{
         }
     }
 
+    .image .container {
+        margin-top: 10em;
+    }
+
     .projects {
         .title {
-            margin: 4em 2em 1em;
+            margin: 4em 1.5em 1em;
         }
 
         .container {
             grid-template-columns: 1fr 1fr 1fr;
-            margin: 0 4.5em;
+            margin: 0 4em;
             
             .card {
                 height: 450px;
@@ -972,22 +1000,60 @@ nav li:hover{
     }
 
     .footer {
-        padding: 4em 6em;
+        .container {
+            padding: 4em 6em;
         
-        .top {
-            .logo img {
-                width: 100px;
-                height: 100px;
+            .top {
+                .logo img {
+                    width: 100px;
+                    height: 100px;
+                }
+
+                .navigation ul {
+                    gap: 2em;
+                    font-size: 20px;
+                }
             }
 
-            .navigation ul {
-                gap: 2em;
-                font-size: 20px;
+            .bottom {
+                margin-top: 4em;
             }
-        }
 
-        .bottom {
-            margin-top: 4em;
         }
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+
+    .navigation .header-row {
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    .nav-btn {
+        width: 540px;
+        margin: 1em auto;
+    }
+
+    .container, .services .container {
+        width: 1440px;
+        margin: 0 auto;
+    }
+
+    .services .title, .projects .title, .projects .container{
+        width: 1400px;
+        margin: 4em auto 1em;
+    }
+
+    .image .container {
+        width: 100%;
+        margin-top: 10em;
+    }
+}
+
+@media only screen and (min-width: 2560px) {
+    .nav-btn {
+        width: 1200px;
+        margin: 1em auto;
     }
 }
