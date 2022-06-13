@@ -356,7 +356,6 @@ nav li:hover {
   padding: 2em;
   border-radius: 10px;
   margin-top: 2em;
-  height: 310px;
 }
 
 .projects .container .minerival-card, .projects .container .minealive-card {
@@ -535,10 +534,10 @@ nav li:hover {
 
 @media only screen and (min-width: 425px) {
   .hero-section .container, .services .container, .projects .container {
-    padding: 2em 3em;
+    padding: 2em 2em;
   }
   .footer {
-    padding: 3em;
+    padding: 3em 2em;
   }
   .wrapper {
     width: 425px;
@@ -548,6 +547,12 @@ nav li:hover {
   }
   .image {
     padding: 0;
+  }
+  .title-card {
+    font-size: 30px;
+  }
+  .simplepixel-card {
+    height: 325px;
   }
 }
 /*# sourceMappingURL=main.css.map */
