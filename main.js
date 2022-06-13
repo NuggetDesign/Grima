@@ -2,7 +2,8 @@ const cardElements = document.querySelectorAll('.card');
 
 cardElements.forEach(container => {
   // Get the variables we're going to use
-const icon = container.querySelector('.icon'),
+const icon = container.querySelector('.icon-conf'),
+	iconNormal = container.querySelector('.regular-icon')
 	iconOutline = container.querySelector('.outline');
 
   // Create our animation
@@ -14,13 +15,13 @@ const card = gsap.timeline({
   
 card
 	.to(icon, {rotation: 360, backgroundColor: '#ffffff'}, 0)
+	.to(iconNormal, {backgroundColor: '#ffffff'}, 0)
 	.to(iconOutline, {fill: '#000909'}, "<")
 
 // Control the animation using event listeners
 container.addEventListener("mouseenter", () => card.play());
 container.addEventListener("mouseleave", () => card.reverse());
 });
-
 
 
 

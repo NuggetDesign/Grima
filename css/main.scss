@@ -243,51 +243,52 @@ nav li:hover{
             margin: 1em 0em 2em;
             font-size: 30px;
         }
+
+        .card-desc {
+            color: #606060;
+            font-size: 15px;
+            margin: 1em 0;
+        }
+
+        .learn-btn {
+            margin: 2em 0 -1.5em;
+            font-size: 13px;
+        }
+
+        .Outline {
+            fill: white;
+        }
+
+        .Outline:hover {
+            fill: black; transition: ease-in-out 0.3s all;
+            
+        }
           
-        .configuration {
+        .icon {
+            background-color: #000909;
+            border-radius: 60px;
+            width: 50px;
+            height: 50px;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            margin: 1em 0em 1.5em;
+        }
+
+        .icon:hover {
+            background-color: white; transition: ease-in-out 0.2s all;
+        }
+
+        .configuration, .bug, .setup {
             border: 1px solid #D0D9DF;
             border-radius: 10px;
             padding: 3em 2em;
-
-            .card-desc {
-                color: #606060;
-                font-size: 15px;
-                margin: 1em 0;
-            }
-
-            .learn-btn {
-                margin: 2em 0 -1.5em;
-                font-size: 13px;
-            }
-            
-            .icon {
-                background-color: #000909;
-                border-radius: 60px;
-                width: 50px;
-                height: 50px;
-                display:flex;
-                align-items:center;
-                justify-content:center;
-                margin: 1em 0em 1.5em;
-            }
-    
-            .icon:hover {
-                background-color: white; transition: ease-in-out 0.2s all;
-            }
-            
-            .Outline {
-                fill: white;
-            }
-    
-            .Outline:hover {
-                fill: black; transition: ease-in-out 0.3s all;
-                
-            }
+            margin-top: 2em;
         }
 
-        .configuration:hover {
+        .configuration:hover, .setup:hover, .bug:hover {
             border: none;
-            background-color: #daa62d;
+            background-color: #FFC641;
             transition: ease-in-out 0.2s;
         }
     }
