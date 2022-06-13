@@ -532,12 +532,33 @@ nav li:hover{
         padding: 0;
     }
 
-    .title-card {
-        font-size: 30px;
+    .projects {
+        .container {
+            .title-card {
+                font-size: 30px;
+            }
+            .simplepixel-card {
+                height: 330px;
+            }
+            .minerival-card, .minealive-card {
+                height: 310px;
+            }
+            .mineheart-card {
+                height: 320px;
+            }
+            .cowsmp-card {
+                height: 340px;
+            }
+            .cartcraft-card, .zedarsmp-card {
+                height: 380px;
+            }
+            .hotdogcraft-card {
+                height: 390px; 
+            }
+        }
     }
 
-    .simplepixel-card {
-        height: 325px;
-    }
-    
+
+
+
 }
