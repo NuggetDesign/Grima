@@ -65,18 +65,22 @@ header {
 }
 
 .hero-section{
-    padding: 2em 1em;
+    .container {
+        padding: 2em 1em;
 
-    h1 {
-        font-size: 65px;
-        text-align: left;
-        text-transform: uppercase;  
-    }
-
-    p {
-        padding-top: 1em;
+        h1 {
+            font-size: 65px;
+            text-align: left;
+            text-transform: uppercase;  
+        }
+    
+        p {
+            padding-top: 1em;
+            color: #71787D;
+        }
     }
 }
+
 .clients {
 
     .desc {
@@ -93,7 +97,7 @@ header {
 }
 
 .wrapper{
-    width:320px;
+    width:425px;
     height:120px;
     position:relative;
     margin:auto;
@@ -499,36 +503,23 @@ nav li:hover{
     }
 }
   
+@media only screen and (min-width: 425px) {
 
-// .services {
-//     .container {
-//         padding: 2em 1em;
+    .hero-section .container, .services .container, .projects .container{
+        padding: 2em 3em;
+    }
 
-//         .configuration {
-//             background-color: #FFC641;
-            
-//             .icon {
-//                 background-color: #000909;
-//                 border-radius: 60px;
-//                 width: 50px;
-//                 height: 50px;
-//                 display:flex;
-//                 align-items:center;
-//                 justify-content:center;
-//             }
-    
-//             .icon:hover {
-//                 background-color: white; transition: ease-in-out 0.2s all;
-//             }
-            
-//             #Outline {
-//                 fill: white;
-//             }
-    
-//             #Outline:hover {
-//                 fill: black; transition: ease-in-out 0.3s all;
-                
-//             }
-//         }
-//     }
-// }
+    .footer {
+        padding: 3em;
+    }
+
+    .brand-logo, .nav-btn{
+        padding: 0 1.5em;
+    }
+
+    .image {
+        padding: 0;
+    }
+
+
+  }

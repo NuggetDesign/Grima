@@ -63,18 +63,19 @@ header .nav-btn {
   top: 20px;
 }
 
-.hero-section {
+.hero-section .container {
   padding: 2em 1em;
 }
 
-.hero-section h1 {
+.hero-section .container h1 {
   font-size: 65px;
   text-align: left;
   text-transform: uppercase;
 }
 
-.hero-section p {
+.hero-section .container p {
   padding-top: 1em;
+  color: #71787D;
 }
 
 .clients .desc {
@@ -90,7 +91,7 @@ header .nav-btn {
 }
 
 .wrapper {
-  width: 320px;
+  width: 425px;
   height: 120px;
   position: relative;
   margin: auto;
@@ -524,5 +525,20 @@ nav li:hover {
 
 .footer .bottom span {
   color: white;
+}
+
+@media only screen and (min-width: 425px) {
+  .hero-section .container, .services .container, .projects .container {
+    padding: 2em 3em;
+  }
+  .footer {
+    padding: 3em;
+  }
+  .brand-logo, .nav-btn {
+    padding: 0 1.5em;
+  }
+  .image {
+    padding: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */
