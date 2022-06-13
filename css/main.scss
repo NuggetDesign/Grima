@@ -46,6 +46,8 @@ body{
 .scroll-lottie {
     display: block;
     margin: 3em auto 0em;
+    width: 140px;
+    height: 140px;
 }
 
 header {
@@ -212,6 +214,10 @@ nav li:hover{
     display: flex;
     align-items: center;
     width: 100%;
+
+    span {
+        font-weight: 600;
+    }
 }
 .social-links li{
     font-size: 18px;
@@ -239,14 +245,13 @@ nav li:hover{
 // Navigation End
 
 .services {
+    .title {
+        margin: 1em .5em 2em;
+        font-size: 30px;
+    }
 
     .container {
         padding: 2em 1em;
-
-        .title {
-            margin: 1em 0em 2em;
-            font-size: 30px;
-        }
 
         .card-desc {
             color: #606060;
@@ -308,13 +313,13 @@ nav li:hover{
 }
 
 .projects {
+    .title {
+        margin: 1em .5em 2em;
+        font-size: 30px;
+    }
+
     .container {
         padding: 2em 1em;
-
-        .title {
-            margin: 1em 0em 3em;
-            font-size: 30px;
-        }
 
         img {
             display: block;
@@ -516,6 +521,12 @@ nav li:hover{
         padding: 2em 2em;
     }
 
+    .services {
+        .title {
+            margin: 3em 1em 1em;
+        }
+    }
+
     .footer {
         padding: 3em 2em;
     }
@@ -533,6 +544,10 @@ nav li:hover{
     }
 
     .projects {
+        .title {
+            margin: 3em 1em 1em;
+        }
+    
         .container {
             .title-card {
                 font-size: 30px;
@@ -557,8 +572,234 @@ nav li:hover{
             }
         }
     }
+}
+
+@media only screen and (min-width: 500px) { 
+
+    nav li a{
+        font-size: 80px;
+    }
+
+    .brand-logo, .nav-btn {
+        padding: 0 .5em;
+    }
+
+    .services {
+        .container {
+            .configuration, .bug, .setup {
+                margin: 2em 1.2em;
+            }
+        }
+    }
+
+    .hero-section {
+        .container {
+            h1 {
+                font-size: 100px;
+                line-height: 100px;
+            }
+
+            p {
+                font-size: 20px;
+            }
+
+            .scroll-lottie {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    }
+
+    .wrapper {
+        width: 500px;
+    }
+
+    .projects {
+        .container {
+            padding: 2em 3em;
+        }
+    }
+
+    .footer {
+        padding: 4em 2em;
+        height: 620px;
+
+        .logo p {
+            width: 230px;
+        }
+
+        .bottom {
+            margin-top: 8em;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .hero-section {
+        .container {
+            padding: 2em 5em;
+
+            h1 {
+                text-align: left;
+                line-height: 120px;
+                font-size: 120px;
+            }
+
+            .scroll-lottie {
+                margin-top: -1em;
+            }
+        }
+    }
+    
+    .clients {
+        .desc {
+            font-size: 18px;
+        }
+    }
+
+    .wrapper {
+        width: 768px;
+    }
+
+    .box {
+        width: 100px;
+        height: 120px;
+    }
+
+    .services {
+        .title {
+            margin: 4em .5em .5em;
+            font-size: 50px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+            
+            .configuration, .bug, .setup {
+                margin: 0;
+            }
+        }
+    }
+
+    .projects {
+        .title {
+            margin: 4em .5em .5em;
+            font-size: 50px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1em;
+            padding: 2em 1.5em;
+
+            .title-card {
+                font-size: 25px;
+            }
+
+            .card {
+                height: 330px;
+            }
+
+            .simplepixel-card {
+                .links {
+                    margin-top: 5em;
+                }
+            }
+
+            .hotdogcraft-card {
+                margin-top: 4em;
+
+                .links {
+                    margin-top: 3em;
+                }
+            }
 
 
+            .minerival-card, .mineheart-card, .minealive-card{
+                img {margin-top: 1em;}
+                .semi-title {margin-top: 2.5em;}
+                .links {margin-top: 5em;}
+            }
 
+            .mineheart-card .links {
+                margin-top: 4.5em;
+            }
 
+            .cartcraft-img {
+                width: 140px;
+            }
+
+            .zedarsmp-card {
+                img {width: 160px;}
+            }
+
+            .hotdogcraft-img {
+                width: 135px;
+                margin-top: -70px;
+            }
+
+        }
+    }
+
+    .let-us-know {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 4em;
+        font-size: 16px;
+
+        div {
+            margin: 0;
+            font-size: 16px;
+            width: 200px;
+            padding: 20px;
+        }
+    }
+
+    .footer {
+        height: 250px;;
+        .top {
+            display: flex;
+            justify-content: space-between;
+
+            .logo {
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 60px;
+                    height: 60px;
+                    margin-right: 1em;
+                }
+
+                h1 {
+                    margin: 0;
+                    font-size: 16px;
+                }
+
+                p {
+                    margin-top: 0;
+                }
+            }
+
+            .navigation {
+                margin-top: 0;
+                    ul {
+                        display: flex;
+                        font-size: 16px;
+                        gap: 1em;
+                    }
+            }
+        }
+
+        .bottom {
+            margin-top: 5em;
+        }
+    }
 }
