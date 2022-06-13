@@ -97,7 +97,7 @@ header {
 }
 
 .wrapper{
-    width:425px;
+    width:320px;
     height:120px;
     position:relative;
     margin:auto;
@@ -502,7 +502,15 @@ nav li:hover{
         }
     }
 }
-  
+
+@media only screen and (min-width: 375px) {
+
+    .wrapper {
+        width: 375px;
+    }
+
+}
+
 @media only screen and (min-width: 425px) {
 
     .hero-section .container, .services .container, .projects .container{
@@ -511,6 +519,10 @@ nav li:hover{
 
     .footer {
         padding: 3em;
+    }
+
+    .wrapper {
+        width: 425px;
     }
 
     .brand-logo, .nav-btn{

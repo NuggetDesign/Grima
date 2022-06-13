@@ -91,7 +91,7 @@ header .nav-btn {
 }
 
 .wrapper {
-  width: 425px;
+  width: 320px;
   height: 120px;
   position: relative;
   margin: auto;
@@ -527,12 +527,21 @@ nav li:hover {
   color: white;
 }
 
+@media only screen and (min-width: 375px) {
+  .wrapper {
+    width: 375px;
+  }
+}
+
 @media only screen and (min-width: 425px) {
   .hero-section .container, .services .container, .projects .container {
     padding: 2em 3em;
   }
   .footer {
     padding: 3em;
+  }
+  .wrapper {
+    width: 425px;
   }
   .brand-logo, .nav-btn {
     padding: 0 1.5em;
