@@ -639,8 +639,8 @@ nav li:hover {
     font-size: 120px;
   }
   .brand-logo a img {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
   .navigation svg {
     height: auto;
@@ -650,7 +650,7 @@ nav li:hover {
     font-size: 18px;
   }
   .hero-section .container {
-    padding: 10em 5em;
+    padding: 4em 5em 10em;
   }
   .hero-section .container h1 {
     text-align: left;
