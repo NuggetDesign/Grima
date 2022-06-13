@@ -134,6 +134,8 @@ header .nav-btn {
   fill: none;
   stroke: #000909;
   stroke-linecap: round;
+  height: 40px;
+  width: 40px;
 }
 
 .fullpage-menu {
@@ -225,9 +227,6 @@ nav li:hover {
 
 .social-links {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -256,12 +255,16 @@ nav li:hover {
   text-decoration: none;
 }
 
-.coppy {
-  color: white;
-}
-
 .coppy a {
   font-size: 12px;
+}
+
+.coppy a p {
+  color: #464646;
+}
+
+.coppy a span {
+  color: #000909;
 }
 
 .services .title {
@@ -542,6 +545,9 @@ nav li:hover {
   .hero-section .container, .services .container, .projects .container {
     padding: 2em 2em;
   }
+  nav li a {
+    font-size: 70px;
+  }
   .services .title {
     margin: 3em 1em 1em;
   }
@@ -552,7 +558,7 @@ nav li:hover {
     width: 425px;
   }
   .brand-logo, .nav-btn {
-    padding: 0 1.5em;
+    padding: 0 .5em;
   }
   .image {
     padding: 0;
@@ -629,8 +635,22 @@ nav li:hover {
 }
 
 @media only screen and (min-width: 768px) {
+  nav li a {
+    font-size: 120px;
+  }
+  .brand-logo a img {
+    width: 70px;
+    height: 70px;
+  }
+  .navigation svg {
+    height: auto;
+    width: 70px;
+  }
+  .coppy a {
+    font-size: 18px;
+  }
   .hero-section .container {
-    padding: 2em 5em;
+    padding: 10em 5em;
   }
   .hero-section .container h1 {
     text-align: left;
