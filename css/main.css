@@ -642,6 +642,15 @@ nav li:hover {
     width: 60px;
     height: 60px;
   }
+  .fullpage-menu-inner {
+    padding: 100px 4em;
+  }
+  .header-nav-footer {
+    padding: 30px 4.2em;
+  }
+  .coppy p {
+    font-size: 14px;
+  }
   .navigation svg {
     height: auto;
     width: 70px;
@@ -795,6 +804,130 @@ nav li:hover {
   }
   .footer .bottom {
     margin-top: 5em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-section .container {
+    padding: 4em 12em 10em;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .services .title {
+    margin: 4em 2em .5em;
+  }
+  .services .container {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 4.5em;
+  }
+  .services .container .configuration, .services .container .bug, .services .container .setup {
+    height: 400px;
+    padding: 3em 2.5em;
+  }
+  .services .container .outline {
+    width: 22px;
+    height: 22px;
+  }
+  .services .container .icon {
+    width: 60px;
+    height: 60px;
+  }
+  .services .container .card-title {
+    margin-top: 1.5em;
+  }
+  .services .container .card-desc {
+    margin-top: .5em;
+    margin-right: 2em;
+  }
+  .services .container .learn-btn {
+    margin-top: 6em;
+  }
+  .projects .title {
+    margin: 4em 2em 1em;
+  }
+  .projects .container {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 4.5em;
+  }
+  .projects .container .card {
+    height: 450px;
+  }
+  .projects .container .card img {
+    width: 300px;
+  }
+  .projects .container .semi-title {
+    font-size: 15px;
+  }
+  .projects .container .title-card {
+    font-size: 32px;
+  }
+  .projects .container .simplepixel-card img {
+    margin-top: -6.5em;
+  }
+  .projects .container .simplepixel-card .links {
+    margin-top: 6em;
+  }
+  .projects .container .minerival-card img, .projects .container .mineheart-card img, .projects .container .minealive-card img {
+    margin-top: 3em;
+  }
+  .projects .container .minerival-card .semi-title, .projects .container .mineheart-card .semi-title, .projects .container .minealive-card .semi-title {
+    margin-top: 4.5em;
+  }
+  .projects .container .minerival-card .links, .projects .container .mineheart-card .links, .projects .container .minealive-card .links {
+    margin-top: 6em;
+  }
+  .projects .container .mineheart-card img {
+    margin-top: 2.5em;
+  }
+  .projects .container .minealive-card {
+    margin-top: 5em;
+  }
+  .projects .container .cowsmp-card img {
+    width: 280px;
+  }
+  .projects .container .cowsmp-card .links {
+    margin-top: 6em;
+  }
+  .projects .container .cartcraft-card img {
+    width: 200px;
+    margin-top: -75px;
+  }
+  .projects .container .cartcraft-card .links {
+    margin-top: 6em;
+  }
+  .projects .container .zedarsmp-card img {
+    width: 230px;
+  }
+  .projects .container .zedarsmp-card .links {
+    margin-top: 6em;
+  }
+  .projects .container .hotdogcraft-card img {
+    width: 195px;
+  }
+  .projects .container .hotdogcraft-card .links {
+    margin-top: 6em;
+  }
+  .let-us-know {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+  }
+  .footer {
+    padding: 4em 6em;
+  }
+  .footer .top .logo img {
+    width: 100px;
+    height: 100px;
+  }
+  .footer .top .navigation ul {
+    gap: 2em;
+    font-size: 20px;
+  }
+  .footer .bottom {
+    margin-top: 4em;
   }
 }
 /*# sourceMappingURL=main.css.map */
