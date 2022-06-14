@@ -78,9 +78,23 @@ menuToggle.addEventListener('click', function(){
 	tl.reversed(!tl.reversed());
 });
 
-const nav = document.querySelector('.navLinks')
+var navOne = document.querySelector('.link1')
 
-nav.addEventListener('click', () => {
+navOne.addEventListener('click', function(){
+	menuBar.reversed(!menuBar.reversed());
+	tl.reversed(!tl.reversed());
+})
+
+var navTwo = document.querySelector('.link2')
+
+navTwo.addEventListener('click', function(){
+	menuBar.reversed(!menuBar.reversed());
+	tl.reversed(!tl.reversed());
+})
+
+var navThree = document.querySelector('.link3')
+
+navThree.addEventListener('click', function(){
 	menuBar.reversed(!menuBar.reversed());
 	tl.reversed(!tl.reversed());
 })
