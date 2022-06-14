@@ -603,7 +603,7 @@ nav li:hover {
     padding: 0 .5em;
   }
   .services .container .configuration, .services .container .bug, .services .container .setup {
-    margin: 2em 1.2em;
+    margin: 2em 0em;
   }
   .hero-section .container h1 {
     font-size: 100px;
@@ -620,7 +620,7 @@ nav li:hover {
     width: 500px;
   }
   .projects .container {
-    margin: 2em 3em;
+    margin: 2em 1em;
   }
   .footer .container {
     padding: 4em 2em;

@@ -23,8 +23,6 @@ container.addEventListener("mouseenter", () => card.play());
 container.addEventListener("mouseleave", () => card.reverse());
 });
 
-
-
 var menuToggle = document.getElementById("menuToggle")
 var menuBar = gsap.timeline();
 
@@ -80,6 +78,12 @@ menuToggle.addEventListener('click', function(){
 	tl.reversed(!tl.reversed());
 });
 
+const nav = document.querySelector('.navLinks')
+
+nav.addEventListener('click', () => {
+	menuBar.reversed(!menuBar.reversed());
+	tl.reversed(!tl.reversed());
+})
 
 
 
