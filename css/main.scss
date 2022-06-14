@@ -356,8 +356,8 @@ nav li:hover{
         }
 
         .cartcraft-card {
-            height: 365px;
-            margin-top: 5em;
+            height: 340px;
+            margin-top: 4em;
         }
 
         .zedarsmp-card {
@@ -380,8 +380,8 @@ nav li:hover{
         }
 
         .cartcraft-img {
-            margin-top: -80px;
-            width: 180px;
+            margin-top: -60px;
+            width: 200px;
             border-radius: 10px;
         }
 
@@ -583,7 +583,10 @@ nav li:hover{
             .cowsmp-card {
                 height: 340px;
             }
-            .cartcraft-card, .zedarsmp-card {
+            .cartcraft-card {
+                height: 350px;
+            }
+            .zedarsmp-card {
                 height: 380px;
             }
             .hotdogcraft-card {
@@ -786,8 +789,9 @@ nav li:hover{
                 margin-top: 4.5em;
             }
 
-            .cartcraft-img {
-                width: 140px;
+            .cartcraft-card {
+                margin-top: 5em;
+                img {width: 200px; margin-top: -80px;}
             }
 
             .zedarsmp-card {
@@ -977,7 +981,8 @@ nav li:hover{
             }
 
             .cartcraft-card {
-                img {width: 200px; margin-top: -75px;}
+                img {width: 280px; margin-top: -60px;}
+                .semi-title {margin-top: 2.5em;}
                 .links {margin-top: 6em;}
             }
 

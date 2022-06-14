@@ -381,8 +381,8 @@ nav li:hover {
 }
 
 .projects .container .cartcraft-card {
-  height: 365px;
-  margin-top: 5em;
+  height: 340px;
+  margin-top: 4em;
 }
 
 .projects .container .zedarsmp-card {
@@ -405,8 +405,8 @@ nav li:hover {
 }
 
 .projects .container .cartcraft-img {
-  margin-top: -80px;
-  width: 180px;
+  margin-top: -60px;
+  width: 200px;
   border-radius: 10px;
 }
 
@@ -587,7 +587,10 @@ nav li:hover {
   .projects .container .cowsmp-card {
     height: 340px;
   }
-  .projects .container .cartcraft-card, .projects .container .zedarsmp-card {
+  .projects .container .cartcraft-card {
+    height: 350px;
+  }
+  .projects .container .zedarsmp-card {
     height: 380px;
   }
   .projects .container .hotdogcraft-card {
@@ -738,8 +741,12 @@ nav li:hover {
   .projects .container .mineheart-card .links {
     margin-top: 4.5em;
   }
-  .projects .container .cartcraft-img {
-    width: 140px;
+  .projects .container .cartcraft-card {
+    margin-top: 5em;
+  }
+  .projects .container .cartcraft-card img {
+    width: 200px;
+    margin-top: -80px;
   }
   .projects .container .zedarsmp-card img {
     width: 160px;
@@ -907,8 +914,11 @@ nav li:hover {
     margin-top: 6em;
   }
   .projects .container .cartcraft-card img {
-    width: 200px;
-    margin-top: -75px;
+    width: 280px;
+    margin-top: -60px;
+  }
+  .projects .container .cartcraft-card .semi-title {
+    margin-top: 2.5em;
   }
   .projects .container .cartcraft-card .links {
     margin-top: 6em;
